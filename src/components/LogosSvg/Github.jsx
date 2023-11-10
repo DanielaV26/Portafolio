@@ -1,5 +1,5 @@
 export const SvgGithub = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" className="w-24 h-24" {...props}>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" className="w-10 h-10" {...props}>
     <title>{"github [#142]"}</title>
     <path
       fill="#000"

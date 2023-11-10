@@ -2,7 +2,7 @@ export const SvgLinkedin = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="xMidYMid"
-    viewBox="0 0 256 256" className="w-24 h-24" 
+    viewBox="0 0 256 256" className="w-10 h-10" 
     {...props}
   >
     <path

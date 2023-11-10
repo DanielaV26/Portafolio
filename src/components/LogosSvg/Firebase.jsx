@@ -1,5 +1,5 @@
 export const SvgFirebase = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" {...props}>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className="w-24 h-24" {...props}>
     <title>{"file_type_firebase"}</title>
     <path
       d="m5.8 24.6.17-.237 8.02-15.214.017-.161-3.535-6.64a.656.656 0 0 0-1.227.207Z"

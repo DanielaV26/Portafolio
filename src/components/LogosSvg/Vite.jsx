@@ -2,7 +2,7 @@ export const SvgVite = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
-    viewBox="0 0 32 32"
+    viewBox="0 0 32 32" className="w-24 h-24"
     {...props}
   >
     <title>{"file_type_vite"}</title>

@@ -2,7 +2,7 @@ export const SvgCloudinary = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="xMidYMid"
-    viewBox="0 -44 256 256"
+    viewBox="0 -44 256 256" className="w-24 h-24"
     {...props}
   >
     <path

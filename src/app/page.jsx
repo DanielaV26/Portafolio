@@ -1,5 +1,6 @@
 'use client'
 import { AnimatedText } from "@/components/TextoAnimado"
+import { Image } from "@nextui-org/react"
 import { motion } from "framer-motion"
 
 export default function Home() {
@@ -19,8 +20,14 @@ export default function Home() {
       <AnimatedText text={"Soy Web Full Stack Developer, con habilidades para construir aplicaciones de diferente índole como verás en mi portafolio. Me gusta crear aplicaciones funcionales, intuitivas y sobretodo atractivas en su diseño, con el fin de lograr una experiencia única y memorable. ¡Te invito a conocer mi skillset, además te muestro mis insignias y los proyectos que he creado!. También si gustas puedes contactarme y dejarme un mensaje."} className="text-sm normal-case text-slate-300 font-normal"/>
       </div>
 
-      <div className="w-full md:w-1/2 p-4">
-        <p className="text-slate-300">aqui va una imagen super estilosaaaaaAaA</p>
+      <div className="w-full md:w-1/2 p-4 flex items-center justify-center">
+        <Image
+      isBlurred
+      width={400}
+      src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699605301/Leonardo_Diffusion_XL_Generate_an_impressive_image_of_a_woman_2_u4efuk.jpg"
+      alt="NextUI Album Cover"
+      className="m-5"
+    />
       </div>
     </main>
   )

@@ -50,7 +50,16 @@ const ContactPage = () => {
       </Button>
   </motion.section>
 
-  <section className="flex flex-wrap flex-row justify-center gap-6 p-6">
+  <motion.section
+  initial={{ opacity: 0, scale: 0.5 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{
+    duration: 0.8,
+    delay: 0.5,
+    ease: [0, 0.71, 0.2, 1.01]
+  }}
+  className="flex flex-wrap flex-row justify-center gap-6 p-6">
+
     <motion.div 
       whileHover={{ scale: [null, 1.5, 1.4] }}
       transition={{ duration: 0.3 }}
@@ -63,7 +72,7 @@ const ContactPage = () => {
       className="box ">
         <a href="https://linkedin.com/in/daniela-vargas-gonzález-6bb05b269"><SvgLinkedin/></a>
       </motion.div>
-    </section>
+    </motion.section>
   </div>
   )
 }

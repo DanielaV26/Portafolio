@@ -9,38 +9,38 @@ const ProyectsPage = () => {
       initial={{ y: -200 }} // Posición inicial en el eje Y
       animate={{ y: 0 }} // Posición final en el eje Y
       transition={{ duration: 1, delay: 0.5 }}
-      className="box uppercase text-emerald-500 font-bold text-center text-xl pt-6">Proyectos</motion.h2>
+      className="box uppercase text-emerald-500 font-tilt text-center text-3xl pt-6">Proyectos</motion.h2>
 
       <motion.article 
-      initial={{ y: 200 }} // Posición inicial en el eje Y
+      initial={{ y: 450 }} // Posición inicial en el eje Y
       animate={{ y: 0 }} // Posición final en el eje Y
       transition={{ duration: 1, delay: 0.5}}
       className="box p-6 flex flex-wrap gap-8 justify-center">
-        <a href="https://danielav26.github.io/Landing-de-venta/">
+        <a href="https://danielav26.github.io/Landing-de-venta/" className="hover:scale-110">
         <Image
         width={400}
         alt="Landing Vinos"
         src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699457220/proy-1_dvfzrf.png"/>
         </a>
-        <a href="https://danielav26.github.io/aplicacion-CRUD/">
+        <a href="https://danielav26.github.io/aplicacion-CRUD/" className="hover:scale-110">
         <Image
         width={400}
         alt="CRUD Nutrición"
         src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699457235/proy-2_txno1a.png"/>
         </a>
-        <a href="https://danielav26.github.io/Dashboard/">
+        <a href="https://danielav26.github.io/Dashboard/" className="hover:scale-110">
         <Image
         width={400}
         alt="Dashboard API Pokemon"
         src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699457246/proy-3_pvfrp5.png"/>
         </a>
-        <a href="https://playful-heliotrope-23594b.netlify.app/">
+        <a href="https://playful-heliotrope-23594b.netlify.app/" className="hover:scale-110">
         <Image
         width={400}
         alt="Restaurante"
         src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699457262/proy-4_e1hkey.png"/>
         </a>
-        <a href="https://brightbooksp5.netlify.app/">
+        <a href="https://brightbooksp5.netlify.app/" className="hover:scale-110">
         <Image
         width={400}
         alt="Ecommerce"

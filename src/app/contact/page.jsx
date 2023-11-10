@@ -8,10 +8,18 @@ const ContactPage = () => {
   const variants = [ "faded"];
   return (
     <div className="dark:bg-zinc-900">
-    <h2 className="uppercase text-center pt-6 font-bold text-xl text-emerald-500">Contacto</h2>
+    <motion.h2 
+    initial={{ y: -200 }} // Posición inicial en el eje Y
+    animate={{ y: 0 }} // Posición final en el eje Y
+    transition={{ duration: 1, delay: 0.5 }}
+    className="box uppercase text-center pt-6 font-tilt text-3xl text-emerald-500">Contacto</motion.h2>
     
 
-    <section className="p-10 flex flex-col flex-direction: columns-2 items-center ">
+    <motion.section 
+    initial={{ y: 450 }} // Posición inicial en el eje Y
+    animate={{ y: 0 }} // Posición final en el eje Y
+    transition={{ duration: 1, delay: 0.5}}
+    className="box p-10 flex flex-col flex-direction: columns-2 items-center ">
     <div className="w-72 ">
       {variants.map((variant) => (
         <Textarea
@@ -40,7 +48,7 @@ const ContactPage = () => {
     <Button  variant="flat" className="bg-emerald-400 bg-opacity-20 text-emerald-400">
         Enviar
       </Button>
-  </section>
+  </motion.section>
 
   <section className="flex flex-wrap flex-row justify-center gap-6 p-6">
     <motion.div 

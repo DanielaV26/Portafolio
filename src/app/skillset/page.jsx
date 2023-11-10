@@ -27,7 +27,7 @@ const SkillPage = () => {
       duration: 0.8,
       delay: 0.5,
       ease: [0, 0.71, 0.2, 1.01]}} className="box dark:bg-zinc-900">
-      <h2 className="uppercase text-center font-bold text-emerald-500 text-2xl pt-6">skillset</h2>
+      <h2 className="uppercase text-center text-emerald-500 text-3xl pt-6 font-tilt">skillset</h2>
 
       <section className="p-6 flex flex-row flex-wrap gap-4 justify-between">
             <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
@@ -96,27 +96,27 @@ const SkillPage = () => {
             </motion.div>
       </section>
 
-    <h2 className="uppercase text-center font-bold text-emerald-500 text-2xl pt-10">Badges</h2>
+    <h2 className="uppercase text-center text-emerald-500 text-3xl pt-10 font-tilt">Badges</h2>
 
     <section className="p-6 flex flex-row flex-wrap gap-4 justify-around">
     <Image className="rounded-full"
       isZoomed
-      width={220}
+      width={200}
       alt="badge1"
       src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699512585/IMG_7640_a6ypin.jpg"/>
     <Image className="rounded-full"
       isZoomed
-      width={220}
+      width={200}
       alt="badge2"
       src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699512602/IMG_7641_mcupbc.jpg"/>
       <Image className="rounded-full"
       isZoomed
-      width={220}
+      width={200}
       alt="badge3"
       src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699512613/IMG_7638_m14kic.jpg"/>
       <Image className="rounded-full"
       isZoomed
-      width={220}
+      width={200}
       alt="badge5"
       src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699512628/IMG_7639_mzowkh.jpg"/>
     </section>

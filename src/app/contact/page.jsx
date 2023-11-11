@@ -4,7 +4,7 @@ import { SvgLinkedin } from "@/components/LogosSvg/Linkedin";
 import {Button, Textarea} from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import Swal from "sweetalert2";
+import { toast } from 'react-toastify';
 
 const ContactPage = () => {
   const initialStateForm = {
@@ -32,13 +32,8 @@ const ContactPage = () => {
         // Envío de correo electrónico exitoso
 setForm(initialStateForm)
 console.log("formulario reiniciado:", form)
-Swal.fire({
-  position: 'top-end',
-  icon: 'success',
-  title: 'Su mensaje va en camino',
-  showConfirmButton: false,
-  timer: 1500
-})
+toast('Información enviada con éxito')
+
         console.log("Correo electrónico enviado con éxito");
       } else {
         // Maneja errores

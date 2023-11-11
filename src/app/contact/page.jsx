@@ -3,8 +3,53 @@ import { SvgGithub } from "@/components/LogosSvg/Github";
 import { SvgLinkedin } from "@/components/LogosSvg/Linkedin";
 import {Button, Textarea} from "@nextui-org/react";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import Swal from "sweetalert2";
 
 const ContactPage = () => {
+  const initialStateForm = {
+    email: "",
+    mensaje: ""
+  };
+  const [form, setForm] = useState(initialStateForm);
+  const handleChange = (e, fieldName) => {
+    const {value} = e.target
+    setForm({...form,[fieldName]:value})
+  }
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+ 
+      if (response.status === 200) {
+        // Envío de correo electrónico exitoso
+setForm(initialStateForm)
+console.log("formulario reiniciado:", form)
+Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'Su mensaje va en camino',
+  showConfirmButton: false,
+  timer: 1500
+})
+        console.log("Correo electrónico enviado con éxito");
+      } else {
+        // Maneja errores
+        console.error("Error al enviar el correo electrónico");
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+ 
+
   const variants = [ "faded"];
   return (
     <div className="dark:bg-zinc-900">
@@ -23,6 +68,15 @@ const ContactPage = () => {
     <div className="w-72 ">
       {variants.map((variant) => (
         <Textarea
+        onKeyDown={(e) => {
+          if (e.key === "Enter" && !e.shiftKey) {
+            e.preventDefault();
+            handleSubmit(e);
+          }
+        }}
+
+        onChange={(e) => handleChange(e, "email")}
+          defaultValue={form.email}
           key={variant}
           variant={variant}
           label="Email"
@@ -36,6 +90,14 @@ const ContactPage = () => {
     <div className="w-72 ">
       {variants.map((variant) => (
         <Textarea
+        onKeyDown={(e) => {
+          if (e.key === "Enter" && !e.shiftKey) {
+            e.preventDefault();
+            handleSubmit(e);
+          }
+        }}
+        onChange={(e) => handleChange(e, "mensaje")}
+          defaultValue={form.mensaje}
           key={variant}
           variant={variant}
           label="Mensaje"
@@ -45,7 +107,9 @@ const ContactPage = () => {
         />
       ))}
     </div>
-    <Button  variant="flat" className="bg-emerald-400 bg-opacity-20 text-emerald-400">
+    <Button  
+    onClick={handleSubmit}
+    variant="flat" className="bg-emerald-400 bg-opacity-20 text-emerald-400">
         Enviar
       </Button>
   </motion.section>

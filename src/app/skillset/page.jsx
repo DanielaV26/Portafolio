@@ -29,8 +29,8 @@ const SkillPage = () => {
       ease: [0, 0.71, 0.2, 1.01]}} className="box dark:bg-zinc-900">
       <h2 className="uppercase text-center text-emerald-500 text-3xl pt-6 font-tilt">skillset</h2>
 
-      <section className="p-6 flex flex-row flex-wrap gap-4 justify-between">
-            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+      <section className="p-6 flex flex-wrap flex-row gap-6 justify-around">
+            {/* <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
       transition={{ duration: 0.3 }} className="box">
                   <SvgHT/>
             </motion.div>
@@ -93,6 +93,168 @@ const SkillPage = () => {
             <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
       transition={{ duration: 0.3 }} className="box">
                   <SvgNotion/>
+            </motion.div> */}
+
+            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+            transition={{ duration: 0.3 }} className="box">
+                  <Image
+                  width={90}
+                  alt="HTML"
+                  className="rounded-full"
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699686474/Dise%C3%B1o_sin_t%C3%ADtulo_8_z7fj86.png"/>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+            transition={{ duration: 0.3 }} className="box">
+                  <Image
+                  width={90}
+                  alt="CSS"
+                  className="rounded-full"
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699686552/Dise%C3%B1o_sin_t%C3%ADtulo_7_dj1nnj.png"/>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+            transition={{ duration: 0.3 }} className="box">
+                  <Image
+                  width={90}
+                  alt="JavaScript"
+                  className="rounded-full"
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699686744/Dise%C3%B1o_sin_t%C3%ADtulo_10_g9n142.png"/>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+            transition={{ duration: 0.3 }} className="box">
+                  <Image
+                  width={90}
+                  alt="NodeJS"
+                  className="rounded-full"
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699685905/Dise%C3%B1o_sin_t%C3%ADtulo_5_uewt3x.png"/>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+            transition={{ duration: 0.3 }} className="box">
+                  <Image
+                  width={90}
+                  alt="ExpressJS"
+                  className="rounded-full"
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699688113/Dise%C3%B1o_sin_t%C3%ADtulo_9_gvk7v1.png"/>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+            transition={{ duration: 0.3 }} className="box">
+                  <Image
+                  width={90}
+                  alt="mongoDB"
+                  className="rounded-full"
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699688878/Dise%C3%B1o_sin_t%C3%ADtulo_11_pdbpe1.png"/>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+            transition={{ duration: 0.3 }} className="box">
+                  <Image
+                  width={90}
+                  alt="React"
+                  className="rounded-full"
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699688884/Dise%C3%B1o_sin_t%C3%ADtulo_12_fa3avu.png"/>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+            transition={{ duration: 0.3 }} className="box">
+                  <Image
+                  width={90}
+                  alt="NextJS"
+                  className="rounded-full"
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699688896/Dise%C3%B1o_sin_t%C3%ADtulo_13_oxjdlf.png"/>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+            transition={{ duration: 0.3 }} className="box">
+                  <Image
+                  width={90}
+                  alt="Vercel"
+                  className="rounded-full"
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699688906/Dise%C3%B1o_sin_t%C3%ADtulo_14_u159ow.png"/>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+            transition={{ duration: 0.3 }} className="box">
+                  <Image
+                  width={90}
+                  alt="Firebase"
+                  className="rounded-full"
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699688919/Dise%C3%B1o_sin_t%C3%ADtulo_15_wmuiaf.png"/>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+            transition={{ duration: 0.3 }} className="box">
+                  <Image
+                  width={90}
+                  alt="Netlify"
+                  className="rounded-full"
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699688948/Dise%C3%B1o_sin_t%C3%ADtulo_16_sahwhm.png"/>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+            transition={{ duration: 0.3 }} className="box">
+                  <Image
+                  width={90}
+                  alt="ViteJS"
+                  className="rounded-full"
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699688955/Dise%C3%B1o_sin_t%C3%ADtulo_17_wgvcix.png"/>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+            transition={{ duration: 0.3 }} className="box">
+                  <Image
+                  width={90}
+                  alt="Tailwind"
+                  className="rounded-full"
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699688962/Dise%C3%B1o_sin_t%C3%ADtulo_18_fsy4p8.png"/>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+            transition={{ duration: 0.3 }} className="box">
+                  <Image
+                  width={90}
+                  alt="NextUI"
+                  className="rounded-full"
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699684272/Dise%C3%B1o_sin_t%C3%ADtulo_gaemad.png"/>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+            transition={{ duration: 0.3 }} className="box">
+                  <Image
+                  width={90}
+                  alt="Flowbite"
+                  className="rounded-full"
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699684081/Dise%C3%B1o_sin_t%C3%ADtulo_4_r33lgj.png"/>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+            transition={{ duration: 0.3 }} className="box">
+                  <Image
+                  width={90}
+                  alt="Framer"
+                  className="rounded-full"
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699688968/Dise%C3%B1o_sin_t%C3%ADtulo_19_bxado6.png"/>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+            transition={{ duration: 0.3 }} className="box">
+                  <Image
+                  width={90}
+                  alt="Clodinary"
+                  className="rounded-full"
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699688975/Dise%C3%B1o_sin_t%C3%ADtulo_20_d838h9.png"/>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+            transition={{ duration: 0.3 }} className="box">
+                  <Image
+                  width={90}
+                  alt="Notion"
+                  className="rounded-full"
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699688979/Dise%C3%B1o_sin_t%C3%ADtulo_21_vywlc2.png"/>
             </motion.div>
       </section>
 

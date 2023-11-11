@@ -20,13 +20,12 @@ import { SvgExpress } from "@/components/LogosSvg/Express"
 
 const SkillPage = () => {
   return (
+      <div className="dark:bg-zinc-900">
     <motion.div 
-    initial={{ opacity: 0, scale: 0.5 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{
-      duration: 0.8,
-      delay: 0.5,
-      ease: [0, 0.71, 0.2, 1.01]}} className="box dark:bg-zinc-900">
+     initial={{ x: -900 }} // Posición inicial en el eje x
+     animate={{ x: 0 }} // Posición final en el eje x
+     transition={{ duration: 1, delay: 0.2 }}
+     className="box dark:bg-zinc-900">
       <h2 className="uppercase text-center text-emerald-500 text-3xl pt-6 font-tilt">skillset</h2>
 
       <section className="p-6 flex flex-wrap flex-row gap-6 justify-around">
@@ -257,8 +256,13 @@ const SkillPage = () => {
                   src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699688979/Dise%C3%B1o_sin_t%C3%ADtulo_21_vywlc2.png"/>
             </motion.div>
       </section>
+      </motion.div>
 
-    <h2 className="uppercase text-center text-emerald-500 text-3xl pt-10 font-tilt">Badges</h2>
+      <motion.div className="box"
+      initial={{ x: 900 }} // Posición inicial en el eje x
+      animate={{ x: 0 }} // Posición final en el eje x
+      transition={{ duration: 1, delay: 0.2 }}>
+    <h2 className="uppercase text-center text-emerald-500 text-3xl pt-10 font-tilt">Insignias</h2>
 
     <section className="p-6 flex flex-row flex-wrap gap-4 justify-around">
     <Image className="rounded-full"
@@ -282,9 +286,9 @@ const SkillPage = () => {
       alt="badge5"
       src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699512628/IMG_7639_mzowkh.jpg"/>
     </section>
-
-
     </motion.div>
+
+    </div>
   )
 }
 

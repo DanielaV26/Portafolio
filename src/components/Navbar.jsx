@@ -1,7 +1,6 @@
 'use client'
 import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenuToggle, NavbarMenuItem, NavbarMenu} from "@nextui-org/react";
-// import {AcmeLogo} from "./AcmeLogo.jsx";
 
 const NavbarPage = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -14,12 +13,13 @@ const NavbarPage = () => {
           className="sm:hidden"
         />
         <NavbarBrand>
-          {/* <AcmeLogo /> */}
-          <p className="font-bold text-emerald-400 text-lg">DV</p>
+          <Link className="font-tilt text-emerald-400 text-2xl" href="/">
+            DV
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-6" justify="center">
+      <NavbarContent className="hidden sm:flex gap-6 font-tilt text-lg" justify="center">
         <NavbarItem>
           <Link color="foreground" href="/">
             Sobre mí
@@ -38,17 +38,17 @@ const NavbarPage = () => {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} href="/contact" variant="flat" className="bg-emerald-400 bg-opacity-20 text-emerald-400 text-base">
+          <Button as={Link} href="/contact" variant="flat" className="bg-emerald-400 bg-opacity-20 text-emerald-400 text-base font-tilt">
             Contacto
           </Button>
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
           <NavbarMenuItem>
-            <Link href="/" className="w-full text-slate-300 hover:text-emerald-400 font-bold text-lg">Sobre mí</Link>
-            <Link href="/skillset" className="w-full text-slate-300 hover:text-emerald-400 font-bold text-lg">Skillset</Link>
-            <Link href="/proyects" className="w-full text-slate-300 hover:text-emerald-400 font-bold text-lg">Proyectos</Link>
-            <Link href="/contact" className="w-full text-slate-300 hover:text-emerald-400 font-bold text-lg">Contacto</Link>
+            <Link href="/" className="w-full text-slate-300 hover:text-emerald-400 font-tilt text-xl">Sobre mí</Link>
+            <Link href="/skillset" className="w-full text-slate-300 hover:text-emerald-400 font-tilt text-xl">Skillset</Link>
+            <Link href="/proyects" className="w-full text-slate-300 hover:text-emerald-400 font-bold text-xl">Proyectos</Link>
+            <Link href="/contact" className="w-full text-slate-300 hover:text-emerald-400 font-bold text-xl">Contacto</Link>
           </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>

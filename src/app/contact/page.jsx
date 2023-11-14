@@ -1,7 +1,7 @@
 'use client'
 import { SvgGithub } from "@/components/LogosSvg/Github";
 import { SvgLinkedin } from "@/components/LogosSvg/Linkedin";
-import {Button, Textarea} from "@nextui-org/react";
+import {Button, Input, Textarea} from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { toast } from 'react-toastify';
@@ -19,6 +19,17 @@ const ContactPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
 
+    // Verificar si el campo de correo electrónico está vacío
+    if (!form.email) {
+      toast('Por favor, ingresa tu dirección de correo electrónico.');
+      return;
+    }
+
+    if (!form.mensaje) {
+      toast('Por favor, ingresa tu mensaje.');
+      return;
+  }
+
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -30,9 +41,9 @@ const ContactPage = () => {
  
       if (response.status === 200) {
         // Envío de correo electrónico exitoso
-setForm(initialStateForm)
-console.log("formulario reiniciado:", form)
-toast('Información enviada con éxito')
+        setForm(initialStateForm)
+        console.log("formulario reiniciado:", form)
+        toast('Información enviada con éxito')
 
         console.log("Correo electrónico enviado con éxito");
       } else {
@@ -59,10 +70,10 @@ toast('Información enviada con éxito')
     initial={{ y: 450 }} // Posición inicial en el eje Y
     animate={{ y: 0 }} // Posición final en el eje Y
     transition={{ duration: 1, delay: 0.5}}
-    className="box p-10 flex flex-col flex-direction: columns-2 items-center ">
+    className="box p-10 flex flex-col flex-direction: columns-2 items-center gap-4">
     <div className="w-72 ">
       {variants.map((variant) => (
-        <Textarea
+        <Input
         onKeyDown={(e) => {
           if (e.key === "Enter" && !e.shiftKey) {
             e.preventDefault();
@@ -76,8 +87,10 @@ toast('Información enviada con éxito')
           variant={variant}
           label="Email"
           labelPlacement="outside"
+          type="email"
           placeholder="Ingresa tu email"
           className="col-span-12 md:col-span-6 mb-6 md:mb-0 text-slate-200"
+          required
         />
       ))}
     </div>
@@ -99,6 +112,7 @@ toast('Información enviada con éxito')
           labelPlacement="outside"
           placeholder="Ingresa tu mensaje"
           className="col-span-12 md:col-span-6 mb-6 md:mb-0 text-slate-200"
+          required
         />
       ))}
     </div>

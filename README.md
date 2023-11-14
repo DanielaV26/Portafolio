@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portafolio
 
-## Getting Started
+Proyecto en donde se muestra mi perfil profesional y las habilidades que he adquirido, con el fin de presentarme en el mundo laboral.
 
-First, run the development server:
+Portafolio [Portafolio](https://portafolio-nu-tawny-73.vercel.app/)  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Portafolio](https://res.cloudinary.com/dhijxrbsk/image/upload/v1699942573/Portafolio_DV_-_Google_Chrome_14-11-2023_3_12_20_zljwue.png)  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Sexto proyecto Bootcamp UDD
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Este proyecto está enfocado en la construcción de mi perfil profesional. En él se incluye:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- _Página principal con una descripción personal._  :sparkles:  
+- _Página "Skillset" enfocada a mostrar mis habilidades aprendidas y las insignias me han otorgado durante el Bootcamp._  
+- _Página "Proyectos" en donde muestro todos los proyectos que he creado en el Bootcamp._  
+- _Página "Contacto" que contiene un formulario para contactarme, además de los íconos que dirigen a mis redes sociales._  
 
-## Learn More
+## Tecnologías utilizadas  :man_technologist:  
 
-To learn more about Next.js, take a look at the following resources:
+- HTML5
+- JavaScript
+- React
+- Next.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Plataformas de despliegue y nube**
+  - Vercel
+  - Nodemailer
+  - Cloudinary
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Librerías utilizadas  :woman_technologist:  
 
-## Deploy on Vercel
+- NextUI
+- TailwindCSS
+- React-Toastify
+- React-router
+- Framer-motion
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Objetivos del proyecto  :clipboard:  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Manejo de rutas del lado del cliente y del servidor utilizando Next.js
+
+## Método de trabajo  :memo:  :handshake:  
+
+- Metodología ágil SCRUM utilizando **Notion**
+
+## Autores  :black_nib:  
+
+- Daniela Vargas G. - [DanielaV26](https://github.com/DanielaV26)

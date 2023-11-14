@@ -28,7 +28,7 @@ const SkillPage = () => {
      className="box dark:bg-zinc-900">
       <h2 className="uppercase text-center text-emerald-500 text-3xl pt-6 font-tilt">skillset</h2>
 
-      <section className="p-6 flex flex-wrap flex-row gap-6 justify-around">
+      <section className="p-6 flex flex-wrap flex-row gap-10 justify-center">
             {/* <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
       transition={{ duration: 0.3 }} className="box">
                   <SvgHT/>
@@ -100,7 +100,7 @@ const SkillPage = () => {
                   width={90}
                   alt="HTML"
                   className="rounded-full"
-                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699686474/Dise%C3%B1o_sin_t%C3%ADtulo_8_z7fj86.png"/>
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699936992/Dise%C3%B1o_sin_t%C3%ADtulo_24_wfrarl.png"/>
             </motion.div>
 
             <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
@@ -109,7 +109,7 @@ const SkillPage = () => {
                   width={90}
                   alt="CSS"
                   className="rounded-full"
-                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699686552/Dise%C3%B1o_sin_t%C3%ADtulo_7_dj1nnj.png"/>
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699937121/Dise%C3%B1o_sin_t%C3%ADtulo_26_goasjx.png"/>
             </motion.div>
 
             <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
@@ -118,7 +118,7 @@ const SkillPage = () => {
                   width={90}
                   alt="JavaScript"
                   className="rounded-full"
-                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699686744/Dise%C3%B1o_sin_t%C3%ADtulo_10_g9n142.png"/>
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699937320/Dise%C3%B1o_sin_t%C3%ADtulo_30_hnv9jq.png"/>
             </motion.div>
 
             <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
@@ -199,7 +199,7 @@ const SkillPage = () => {
                   width={90}
                   alt="ViteJS"
                   className="rounded-full"
-                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699688955/Dise%C3%B1o_sin_t%C3%ADtulo_17_wgvcix.png"/>
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699938372/Dise%C3%B1o_sin_t%C3%ADtulo_33_kv0n4p.png"/>
             </motion.div>
 
             <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
@@ -217,7 +217,7 @@ const SkillPage = () => {
                   width={90}
                   alt="NextUI"
                   className="rounded-full"
-                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699684272/Dise%C3%B1o_sin_t%C3%ADtulo_gaemad.png"/>
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699937839/Dise%C3%B1o_sin_t%C3%ADtulo_35_dudc3a.png"/>
             </motion.div>
 
             <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
@@ -226,7 +226,7 @@ const SkillPage = () => {
                   width={90}
                   alt="Flowbite"
                   className="rounded-full"
-                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699684081/Dise%C3%B1o_sin_t%C3%ADtulo_4_r33lgj.png"/>
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699936473/Dise%C3%B1o_sin_t%C3%ADtulo_28_nex8xv.png"/>
             </motion.div>
 
             <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
@@ -235,7 +235,7 @@ const SkillPage = () => {
                   width={90}
                   alt="Framer"
                   className="rounded-full"
-                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699688968/Dise%C3%B1o_sin_t%C3%ADtulo_19_bxado6.png"/>
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699936041/Dise%C3%B1o_sin_t%C3%ADtulo_25_eppz5l.png"/>
             </motion.div>
 
             <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
@@ -253,7 +253,16 @@ const SkillPage = () => {
                   width={90}
                   alt="Notion"
                   className="rounded-full"
-                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699688979/Dise%C3%B1o_sin_t%C3%ADtulo_21_vywlc2.png"/>
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699938224/Dise%C3%B1o_sin_t%C3%ADtulo_32_qjvtxc.png"/>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: [null, 1.3, 1.2] }}
+            transition={{ duration: 0.3 }} className="box">
+                  <Image
+                  width={90}
+                  alt="Nodemailer"
+                  className="rounded-full"
+                  src="https://res.cloudinary.com/dhijxrbsk/image/upload/v1699935512/Dise%C3%B1o_sin_t%C3%ADtulo_22_o7mwel.png"/>
             </motion.div>
       </section>
       </motion.div>
@@ -264,7 +273,7 @@ const SkillPage = () => {
       transition={{ duration: 1, delay: 0.2 }}>
     <h2 className="uppercase text-center text-emerald-500 text-3xl pt-10 font-tilt">Insignias</h2>
 
-    <section className="p-6 flex flex-row flex-wrap gap-4 justify-around">
+    <section className="p-6 flex flex-row flex-wrap gap-10 justify-center">
     <Image className="rounded-full"
       isZoomed
       width={200}

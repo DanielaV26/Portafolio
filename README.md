@@ -2,7 +2,8 @@
 
 Proyecto en donde se muestra mi perfil profesional y las habilidades que he adquirido, con el fin de presentarme en el mundo laboral.
 
-[Portafolio](https://portafolio-nu-tawny-73.vercel.app/)  
+[Portafolio](https://portafolio-nu-tawny-73.vercel.
+app/)  
 
 ![Portafolio](https://res.cloudinary.com/dhijxrbsk/image/upload/v1699942573/Portafolio_DV_-_Google_Chrome_14-11-2023_3_12_20_zljwue.png)  
 
@@ -22,10 +23,11 @@ Este proyecto está enfocado en la construcción de mi perfil profesional. En é
 - React
 - Next.js
 
-- **Plataformas de despliegue y nube**
-  - Vercel
-  - Nodemailer
-  - Cloudinary
+### Plataformas de despliegue y nube
+
+- Vercel
+- Nodemailer
+- Cloudinary
 
 ## Librerías utilizadas  :woman_technologist:  
 
